@@ -1,0 +1,54 @@
+
+{
+    "sites": [
+        {
+            "key": "iqyi",
+            "name": "🎬-爱奇艺-",
+            "api": "https://iqiyizyapi.com/api.php/provide/vod",
+            "active": true
+        },
+        {
+            "key": "dbzy.tv",
+            "name": "🎬豆瓣资源",
+            "api": "https://caiji.dbzy5.com/api.php/provide/vod",
+            "active": true
+        },
+        {
+            "key": "tyyszy.com",
+            "name": "🎬天涯影视",
+            "api": "https://tyyszy.com/api.php/provide/vod",
+            "active": true
+        },
+        {
+            "key": "maotaizy.me",
+            "name": "🎬茅台资源",
+            "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
+            "active": true
+        },
+        {
+            "key": "wolongzyw.com",
+            "name": "🎬卧龙资源",
+            "api": "https://wolongzyw.com/api.php/provide/vod",
+            "active": true
+        },
+        {
+            "key": "ikunzy.com",
+            "name": "🎬iKun资源",
+            "api": "https://ikunzyapi.com/api.php/provide/vod",
+            "active": true
+        },
+        {
+            "key": "dyttzyapi.com",
+            "name": "🎬电影天堂",
+            "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
+            "active": true
+        },
+        {
+            "key": "maoyanapi.top",
+            "name": "🎬猫眼资源",
+            "api": "https://api.maoyanapi.top/api.php/provide/vod",
+            "active": true
+        }
+      
+    ]
+}
