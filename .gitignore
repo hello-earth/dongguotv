@@ -1,0 +1,30 @@
+node_modules/
+.env
+.DS_Store
+Thumbs.db
+search_cache.json
+detail_cache.json
+cache_search.json
+cache_detail.json
+cache.db
+cache.db-wal
+cache.db-shm
+*.log
+db.json
+app-debug.apk
+public/cache
+
+# IDE Config
+.idea/
+*.iml
+
+# Android/Capacitor Build
+android/app/build/
+android/.gradle/
+android/local.properties
+
+
+
+
+
+
