@@ -58,9 +58,9 @@
 
     <!-- 性能优化：DNS 预解析和预连接 -->
     <link rel="dns-prefetch" href="//api.themoviedb.org">
-    <link rel="dns-prefetch" href="//tmdb.piiz.cc">
+    <link rel="dns-prefetch" href="//solitary-moon-6716.b6782310.er.aliyun-esa.net">
     <link rel="preconnect" href="https://api.themoviedb.org" crossorigin>
-    <link rel="preconnect" href="https://tmdb.piiz.cc" crossorigin>
+    <link rel="preconnect" href="https://solitary-moon-6716.b6782310.er.aliyun-esa.net" crossorigin>
 
     <!-- PWA Setup -->
     <link rel="manifest" href="manifest.json">
@@ -3250,8 +3250,8 @@
                         if (config.enable_local_image_cache === false) {
                             console.log('[Config] Vercel 环境检测：禁用本地图片缓存，使用官方源');
                             // 回退到官方 CDN
-                            this.TMDB_IMG_URL = "https://tmdb.piiz.cc/t/p/w342";
-                            this.TMDB_BACKDROP_URL = "https://tmdb.piiz.cc/t/p/original";
+                            this.TMDB_IMG_URL = "https://solitary-moon-6716.b6782310.er.aliyun-esa.net/t/p/w342";
+                            this.TMDB_BACKDROP_URL = "https://solitary-moon-6716.b6782310.er.aliyun-esa.net/t/p/original";
                         }
 
                         // 如果配置了反代地址，进行 IP 检测并切换
