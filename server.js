@@ -317,7 +317,7 @@ app.get('/api/config', (req, res) => {
         tmdb_api_key: process.env.TMDB_API_KEY,
         tmdb_proxy_url: process.env.TMDB_PROXY_URL,
         // Vercel 环境下禁用本地图片缓存，防止写入报错
-        enable_local_image_cache: !IS_VERCEL && process.env.ENABLE_LOCAL_IMAGE_CACHE,
+        enable_local_image_cache: !IS_VERCEL && process.env.ENABLE_LOCAL_IMAGE_CACHE=="FALSE" ? false : true,
         // 多用户同步功能
         sync_enabled: syncEnabled,
         multi_user_mode: ACCESS_PASSWORDS.length > 1
@@ -455,7 +455,7 @@ app.get('/api/tmdb-proxy', async (req, res) => {
     }
 
     try {
-        const TMDB_BASE = 'https://api.themoviedb.org/3';
+        const TMDB_BASE = process.env.TMDB_PROXY_URL ? process.env.TMDB_PROXY_URL + "/api/3" : 'https://api.themoviedb.org/3';
         const response = await axios.get(`${TMDB_BASE}${tmdbPath}`, {
             params: {
                 ...params,
